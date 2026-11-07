@@ -118,22 +118,20 @@ export default function HeroSection() {
           </div>
 
           {/* ========================================================================= */}
-          {/* Kolom Kanan: Foto Resmi Sandi (Ukuran Sangat Besar / Ekstra Lebar)        */}
+          {/* Kolom Kanan: Foto Resmi Sandi (Ukuran Ideal & Proporsional di Desktop, Rapi di HP) */}
           {/* ========================================================================= */}
-          <div className="lg:col-span-6 relative flex items-end justify-center lg:justify-end mt-6 lg:mt-0">
-            <div className="relative w-full max-w-[1600px] z-10 flex justify-center lg:justify-end translate-x-12 sm:translate-x-20 lg:translate-x-28 translate-y-12 sm:translate-y-18 lg:translate-y-24">
+          <div className="lg:col-span-6 relative flex items-end justify-center lg:justify-end mt-8 lg:mt-0 self-end">
+            <div className="relative w-full max-w-[320px] sm:max-w-[420px] md:max-w-[500px] lg:max-w-none z-10 flex justify-center lg:justify-end lg:translate-x-12 lg:translate-y-8">
 
-              {/* Aura Pendar Merah di Balik Foto - Posisi Dinaikkan Sedikit (-translate-y) */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[65%] sm:-translate-y-[70%] lg:-translate-y-[75%] w-[240px] h-[240px] sm:w-[320px] sm:h-[320px] lg:w-[420px] lg:h-[420px] bg-red-600/25 rounded-full blur-[90px] pointer-events-none"></div>
+              {/* Aura Pendar Merah di Balik Foto */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[65%] w-[80%] lg:w-[480px] xl:w-[540px] aspect-square bg-red-600/30 rounded-full blur-[80px] lg:blur-[110px] pointer-events-none"></div>
 
-              {/* Foto Resmi Sandi Ukuran Sedang & Seimbang */}
-              <div className="relative z-10 w-full flex justify-center lg:justify-end">
-                <img
-                  src="/sandi-photo.png"
-                  alt="Sandi Putra Pratama, S.Kom"
-                  className="w-full h-auto max-h-[1600px] lg:max-h-[1900px] object-contain scale-[1.35] sm:scale-[1.5] lg:scale-[1.8] origin-bottom transform transition-transform duration-500"
-                />
-              </div>
+              {/* Foto Resmi Sandi: Skala Pas Ideal (Dikurangi 1x dari sebelumnya) */}
+              <img
+                src="/sandi-photo.png"
+                alt="Sandi Putra Pratama, S.Kom"
+                className="w-full sm:w-auto h-auto max-h-[420px] sm:max-h-[500px] lg:max-h-none lg:w-[750px] xl:w-[900px] 2xl:w-[1050px] object-contain object-bottom drop-shadow-[0_25px_50px_rgba(0,0,0,0.95)] lg:scale-[1.45] xl:scale-[1.65] origin-bottom transition-all duration-300"
+              />
 
             </div>
           </div>
