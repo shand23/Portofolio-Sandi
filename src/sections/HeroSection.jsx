@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   Globe,
+  Download,
   ChevronDown
 } from 'lucide-react';
 import { WhatsAppIcon } from '../components/SocialIcons';
@@ -107,11 +108,14 @@ export default function HeroSection() {
               </a>
 
               <a
-                href="#projects"
-                className="inline-flex items-center gap-1.5 px-5 py-3 rounded-xl text-xs sm:text-sm font-medium text-white hover:text-red-400 border border-neutral-800 hover:border-red-500/40 transition-all bg-neutral-900/60"
+                href="/CV_Sandi_Putra_Pratama.pdf"
+                download="CV_Sandi_Putra_Pratama.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs sm:text-sm font-medium text-white hover:text-white border border-neutral-800 hover:border-red-500/50 hover:bg-neutral-800/80 transition-all bg-neutral-900/60 group shadow-md"
               >
-                <span>Lihat Proyek & Skill</span>
-                <ChevronDown size={14} className="text-red-500" />
+                <Download size={15} className="text-red-500 group-hover:translate-y-0.5 transition-transform" />
+                <span>Download CV</span>
               </a>
             </div>
 
