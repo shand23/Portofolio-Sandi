@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #060608;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom Red Glowing Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #060608;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 9999px;
+    border: 2px solid #060608;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ef4444;
+  }
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-script {
+  font-family: 'Caveat', cursive;
+}
+
+/* Glassmorphism & Cyber Card Effects */
+.glass-panel {
+  background: rgba(18, 18, 22, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(239, 68, 68, 0.18);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px -8px rgba(239, 68, 68, 0.15);
+}
+
+.glass-panel:hover {
+  border-color: rgba(239, 68, 68, 0.45);
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.9), 0 0 25px -5px rgba(239, 68, 68, 0.35);
+}
+
+/* Glowing text and shadows */
+.text-glow-red {
+  text-shadow: 0 0 16px rgba(239, 68, 68, 0.65), 0 0 32px rgba(239, 68, 68, 0.35);
+}
+
+.box-glow-red {
+  box-shadow: 0 0 25px -4px rgba(239, 68, 68, 0.5);
+}
+
+/* Background grid overlay */
+.cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}

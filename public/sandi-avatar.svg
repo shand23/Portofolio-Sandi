@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#b91c1c" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    
+    <linearGradient id="neonRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3355" />
+      <stop offset="50%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+
+    <linearGradient id="charGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e24" />
+      <stop offset="100%" stop-color="#0a0a0c" />
+    </linearGradient>
+
+    <linearGradient id="accentGlow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    
+    <filter id="shadowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#ef4444" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="250" cy="250" r="230" fill="url(#bgGlow)" />
+
+  <!-- Outer Tech Ring -->
+  <circle cx="250" cy="250" r="200" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="16 12" stroke-opacity="0.4" />
+  <circle cx="250" cy="250" r="185" fill="#0d0d11" stroke="#26262e" stroke-width="2" />
+  
+  <!-- Subtle Grid Pattern in circle -->
+  <g opacity="0.1" stroke="#ffffff" stroke-width="1">
+    <line x1="120" y1="200" x2="380" y2="200" />
+    <line x1="120" y1="250" x2="380" y2="250" />
+    <line x1="120" y1="300" x2="380" y2="300" />
+    <line x1="200" y1="120" x2="200" y2="380" />
+    <line x1="250" y1="120" x2="250" y2="380" />
+    <line x1="300" y1="120" x2="300" y2="380" />
+  </g>
+
+  <!-- Developer Silhouette / Character -->
+  <!-- Shoulders & Body -->
+  <path d="M140 410 C140 330, 190 300, 250 300 C310 300, 360 330, 360 410 Z" fill="url(#charGrad)" stroke="#ef4444" stroke-width="2" stroke-opacity="0.6"/>
+  <!-- Hoodie / Collar Accents -->
+  <path d="M210 305 L250 355 L290 305" fill="none" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+  <path d="M250 355 L250 410" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4 4" stroke-opacity="0.7"/>
+
+  <!-- Neck -->
+  <rect x="232" y="240" width="36" height="65" rx="10" fill="#17171c" stroke="#ef4444" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- Head Base -->
+  <ellipse cx="250" cy="210" rx="60" ry="72" fill="#141418" stroke="#ef4444" stroke-width="2" />
+
+  <!-- Modern Hair Style -->
+  <path d="M190 200 C185 145, 230 130, 275 135 C310 138, 320 170, 315 200 C305 175, 275 160, 240 162 C210 165, 195 185, 190 200 Z" fill="#09090b" stroke="#ef4444" stroke-width="1.5"/>
+
+  <!-- Tech Glasses / HUD Visor with Red Neon Glow -->
+  <g filter="url(#shadowFilter)">
+    <rect x="200" y="192" width="100" height="32" rx="8" fill="#09090b" stroke="url(#neonRedGrad)" stroke-width="2.5" />
+    <line x1="206" y1="208" x2="242" y2="208" stroke="#ff3355" stroke-width="2" stroke-linecap="round"/>
+    <line x1="258" y1="208" x2="294" y2="208" stroke="#ff3355" stroke-width="2" stroke-linecap="round"/>
+    <!-- HUD reflections -->
+    <polygon points="210,196 225,196 215,220 200,220" fill="#ffffff" opacity="0.3" />
+    <polygon points="262,196 277,196 267,220 252,220" fill="#ffffff" opacity="0.3" />
+  </g>
+
+  <!-- Headphones / Audio Device -->
+  <rect x="180" y="195" width="12" height="30" rx="6" fill="#ef4444" />
+  <rect x="308" y="195" width="12" height="30" rx="6" fill="#ef4444" />
+  <path d="M185 200 C185 140, 315 140, 315 200" fill="none" stroke="#26262b" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Code / Tech Emblems floating -->
+  <g opacity="0.85">
+    <text x="125" y="150" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="bold" fill="#ef4444">&lt;code&gt;</text>
+    <text x="320" y="320" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="bold" fill="#ef4444">&#123; ... &#125;</text>
+  </g>
+
+  <!-- Status Light -->
+  <circle cx="250" cy="40" r="4" fill="#ef4444" filter="url(#shadowFilter)"/>
+</svg>
+
