@@ -118,15 +118,15 @@ export default function HeroSection() {
           </div>
 
           {/* ========================================================================= */}
-          {/* Kolom Kanan: Foto Resmi Sandi (Ukuran Ideal & Proporsional di Desktop, Rapi di HP) */}
+          {/* Kolom Kanan: Foto Resmi Sandi (Posisi Presisi di Atas Garis Bawah)        */}
           {/* ========================================================================= */}
-          <div className="lg:col-span-6 relative flex items-end justify-center lg:justify-end mt-8 lg:mt-0 self-end">
-            <div className="relative w-full max-w-[320px] sm:max-w-[420px] md:max-w-[500px] lg:max-w-none z-10 flex justify-center lg:justify-end lg:translate-x-12 lg:translate-y-8">
+          <div className="lg:col-span-6 relative flex items-center lg:items-end justify-center lg:justify-end mt-4 lg:mt-0 self-center lg:self-end">
+            <div className="relative w-full max-w-[320px] sm:max-w-[420px] md:max-w-[500px] lg:max-w-none z-10 flex justify-center lg:justify-end lg:translate-x-12 lg:translate-y-5">
 
               {/* Aura Pendar Merah di Balik Foto */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[65%] w-[80%] lg:w-[480px] xl:w-[540px] aspect-square bg-red-600/30 rounded-full blur-[80px] lg:blur-[110px] pointer-events-none"></div>
 
-              {/* Foto Resmi Sandi: Skala Pas Ideal (Dikurangi 1x dari sebelumnya) */}
+              {/* Foto Resmi Sandi */}
               <img
                 src="/sandi-photo.png"
                 alt="Sandi Putra Pratama, S.Kom"
